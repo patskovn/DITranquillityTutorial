@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058A4E98DAF074D8E6326DBB63B40E7A /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DF6C5769EBFF467639435113C9134 /* Resolver.swift */; };
+		09E6BBC5873737C0AD5E73FDACBDAF47 /* DITranquillity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8B97E58F0F16DD8BBAD28E898CF5206 /* DITranquillity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D00A9B2CDF6C0FD57AEF5057C8FAEDC /* TypeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568A9EE1128EF1912B3C314D4B98A61 /* TypeKey.swift */; };
+		14D720D9ACDF797AB5260688F7708BB1 /* ExtensionsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C062A3D31C59C967C8E3F614E22C8 /* ExtensionsContainer.swift */; };
+		1A045B46FEDA25D98249327DD0676378 /* SwiftLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CF3E0A720D402045936C1A33D334A0 /* SwiftLazy.framework */; };
+		3165894470BB02EEF5086BD0BFA213B9 /* DIStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7FAC04F3C5A664E6022C0495FA0906 /* DIStorage.swift */; };
+		3D4EE521C9F13468E8ED6EFE39674954 /* UIView+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 217F331DB99F67FD0DE7255BEA245980 /* UIView+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EAAF8A6992FB965FF399EC016AF0CC3 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656284FEE15BABBB87E32AA7AA5D8637 /* Component.swift */; };
+		42EC083439A5F899F27780D43451A6C6 /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F16C49CC50D53D1204769C43A620D5 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42ED169BD307D89532E5E598843C16BE /* ViewController+Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC36416D122904F1A22CA0245B5DA7D3 /* ViewController+Children.swift */; };
+		4DC767F8F02272C70608B0C35B6DD169 /* DIContainer.Reg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AD6FB3F3E4996270693501D3148D99 /* DIContainer.Reg.swift */; };
+		4E2F2E346F0370F734F3E601D5DB01F6 /* SwiftNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCEE551F71D1DE73D52403107B4523B /* SwiftNSResolver.swift */; };
+		4F5FDA2C78AB02AF684EB732E305F6CD /* DINSResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB91A40C74BF3722B63B4BB77956B04 /* DINSResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FB5D4942BB574F004D5896422D4F96C /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F103E775E145ABD8DF51D4A8CC5913D /* Lazy.swift */; };
+		4FC3FEB19D1021C0AB64B157D41F7FD4 /* SwiftLazy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB895DE6D8978A76A4837ED527625A0A /* SwiftLazy-dummy.m */; };
+		5A1C428D6EAFCAD88753FC7CB8EC8091 /* DIComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B7BF22436EFE82EF049420BF60247E /* DIComponentBuilder.swift */; };
+		6021AAE4DA5FEFD12E5D6417F3A8DB7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5998D865E15DBDB818EE86F26146802D /* Foundation.framework */; };
+		61EFF613532752998BAA79CC1F47573C /* DIPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C05EF82DCFBCB9CBD08D4AAA251A8A /* DIPart.swift */; };
+		639770F0E132F1B25D1377331767AF06 /* DIStoryboardBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C2D858E6520FCF72D4E6F2C0C3F272 /* DIStoryboardBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6820CEA6CA193F1FD02264372E781399 /* Pods-DITranquillityTutorial-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E38215285842E53EA73BD7848641E0 /* Pods-DITranquillityTutorial-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		688A0AC0D093347B4BB9E3EF1B296CB1 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD57452FC825DFDFB9F96718FAB7CCD /* BaseProvider.swift */; };
+		6A5FC58CB332A67362D6183BA2C45BCC /* DIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670025C839CC9B352E5584ED047A391D /* DIStoryboard.swift */; };
+		71D629E613E01DF18910A2FFAB0B8F21 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3825EE809EBE91EFEC6E1776245ED3F /* Multithread.swift */; };
+		746EEEF88A62845385DA1704E03B8719 /* StoryboardContainerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD3BA888E0EFA83323A52E20FEB7B02 /* StoryboardContainerMap.swift */; };
+		76B200B785768DF78DB94C8ACB1F91EC /* SwiftLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4B27D22B24498F1C5DA6052A67F6F /* SwiftLazy.swift */; };
+		7796B154208D0CA9DB682BBD916EF118 /* Modificators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC71440C82075FE0671890DF59ECBE /* Modificators.swift */; };
+		7D018FB1FE3B8F5AEEF762776BD06DCD /* UICollectionView+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E525838E1817B3EA2CBDDA5160C84AF0 /* UICollectionView+Swizzling.m */; };
+		7D6D9905461C184ED4B4EA99CC13F233 /* MethodMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5284E49967FBC1E62CA641FB40908A3 /* MethodMaker.swift */; };
+		7F5B1016648A730A53E07D2CBBB84874 /* DIModificators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD2A7EFEB2ED9A32D7621FC51CDAA7 /* DIModificators.swift */; };
+		83CDBDD4ABB182484DEC4D1C0573004C /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370253AEAD3B8AEDD0EEF24208663327 /* DIContainer.swift */; };
+		8A2632F2359B2B10EF3B93CBA7BEA786 /* DILifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF63E303454A09EBA33000E4DB040C /* DILifetime.swift */; };
+		8D59F4AEE236B3B584BCC0ED78FC0846 /* Synchronize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7392ADB3558D8A382C46B18B9C07C5 /* Synchronize.swift */; };
+		969263BCBC622492E9224618BC152A2C /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AC661037CB18BCB428EC8D2B635589 /* NSObject+Swizzling.m */; };
+		97BDB6CD5BE87B30D67B9A79165EADD8 /* UIStoryboard+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7CA3245482B0479AA6D662F77CB46 /* UIStoryboard+Swizzling.m */; };
+		A1888428A61BD56C06000C8946830AC3 /* SwiftLazy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB0FC97D6F6A7988D4581DB019A6C34 /* SwiftLazy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5AB18A472D60F9C3FE16874102DC5D1 /* DIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA0614DAAE43E52CC1309A5B9CB0CD /* DIExtensions.swift */; };
+		A5EC59E8F3FB315A94DC426921D57BC3 /* UIView+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D66CAB06A7CB5A3717959AE4892971 /* UIView+Swizzling.m */; };
+		ABF9D34191A10050C6088C90D2E63BC9 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C1435365E9DAEA4EE355BB2E6C65AD /* UIViewController+Swizzling.m */; };
+		B13304FD613E2992178CAF218D2D7E46 /* DITranquillity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47312CD94199193C7AB0A103AD27CC5E /* DITranquillity-dummy.m */; };
+		B4E50EDB1D13D49B19E5EFA89BBBFF5A /* SpecificType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1218F42D3AF1A37F581B92ACCF723EC0 /* SpecificType.swift */; };
+		B5F50D179DF61F6F573586E3CBD004BB /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8328988A5863F7843D7EAB438DEB6 /* Provider.swift */; };
+		B72E5DD433ED9817449EEEF210083C39 /* DITranquillity.h in Headers */ = {isa = PBXBuildFile; fileRef = 16181B4AEB18772F8E1265FD733ACD93 /* DITranquillity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73CC9E9A2A5E110B51D3A23D417A4B7 /* UITableView+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C23E83CD760441A8380F698447A7238 /* UITableView+Swizzling.m */; };
+		BCC311B8D32B07743298D1668D99B095 /* ProtocolMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966240E3D2B2E677FB86E327EF26148 /* ProtocolMagic.swift */; };
+		C039BB76FF2F7F0A9E8F9495F7CD42C4 /* StoryboardResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6350427FD56125C9AF48DEF0DEB9E34 /* StoryboardResolver.swift */; };
+		C1A8FAF30229B85FA449079AEAA52C5D /* DIComponentBuilder.Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96A027B32758DC58F0766241188ECF /* DIComponentBuilder.Injection.swift */; };
+		C4DF311C23301D47C26AB8CEAC5DD13A /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD42B269EE25ACD9CE0C629FDB2D602 /* BaseLazy.swift */; };
+		C61DACE72105183A10E857CAC6E24870 /* NSObject+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = E236370E665B1C14ECA02E305F4877A0 /* NSObject+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C767DB18350CC391CF00C3437A79440C /* DIStoryboardBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D0585474849BA7EA07C5B893B25E95 /* DIStoryboardBase.m */; };
+		CE361F0565B30AAD2C16B92CBC2A3721 /* DIContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92D668DF4CA3EA7D6F1B0C69B9E963 /* DIContainer+Extensions.swift */; };
+		D006F8F023CDFA4202611DEADA757852 /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5596A4FACBA510D47D9CCE89E7F0F /* ProviderArgs.swift */; };
+		D07F0F18F8A9E48E523E1EA1997EEB59 /* ParsedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CECAF658C6133706A29714D5E5903D4 /* ParsedType.swift */; };
+		D169480997EC74E5A2E0EEDB283653E6 /* BundleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9AA9090B38F864A1AFFC4C47EEA15 /* BundleContainer.swift */; };
+		D47AE3F8F602871A9BE2127FD26A4B93 /* DINSResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A972DF744622A4C1026C0CFD0C2A6D44 /* DINSResolver.m */; };
+		D51537F2CC291D548C3C42434D8F6689 /* DIFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020CBA8E3479B41F4CF1326EBD44582 /* DIFramework.swift */; };
+		D7E017DA798CB427DD8D46700E322412 /* MethodSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00725787061334B5D19660F3C4B39041 /* MethodSignature.swift */; };
+		DC997C7EE2A79478E45152F8FBE1EEC4 /* Pods-DITranquillityTutorial-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E7481ABCF5748B59CC838668D9E973 /* Pods-DITranquillityTutorial-dummy.m */; };
+		E04472603FFF5792C25A4BC06E041BDA /* DITypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CC92E59F2ACD59002DD48781ECB97 /* DITypes.swift */; };
+		E13B019495AC58A26143F6D1E2B4815D /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F7711620C556A34C8674ADAC0181E /* DIScope.swift */; };
+		E71DC7B53AC26E5089F4B1828912FCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5998D865E15DBDB818EE86F26146802D /* Foundation.framework */; };
+		EA599DB84F17FEEAF99C915C38A6280B /* DISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120CAD9DD78190849705D37936488631 /* DISettings.swift */; };
+		EB3B48ABF3C8D7BE5A23FB42D1EFD231 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501770AF5CF86C3A63520026651168 /* Log.swift */; };
+		EC3B073640555D5A45BE5DD276A26CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5998D865E15DBDB818EE86F26146802D /* Foundation.framework */; };
+		F6F625B2B1CD5A9B4BE71BEABC2C8B0E /* DIComponentBuilder+SubviewsInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F968AEEB0FD5030F98DB0C047E5CDF /* DIComponentBuilder+SubviewsInject.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E982A62C630EE14E55C0EE9030E261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F730CF46791371B19C2E8CE58ACEDF;
+			remoteInfo = DITranquillity;
+		};
+		BBFE61D4774289A45C461963C33BEA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8AD2A8481587020F08B21547536E344;
+			remoteInfo = SwiftLazy;
+		};
+		F0E5D70144F30933F30A2E1FF0ED3B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8AD2A8481587020F08B21547536E344;
+			remoteInfo = SwiftLazy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00725787061334B5D19660F3C4B39041 /* MethodSignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MethodSignature.swift; path = Sources/DITranquillity/Private/MethodSignature.swift; sourceTree = "<group>"; };
+		069BE2F3369B771282F1FC772BF915C7 /* SwiftLazy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftLazy.modulemap; sourceTree = "<group>"; };
+		08CF3E0A720D402045936C1A33D334A0 /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B9AA9090B38F864A1AFFC4C47EEA15 /* BundleContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleContainer.swift; path = Sources/DITranquillity/Private/BundleContainer.swift; sourceTree = "<group>"; };
+		10AD6FB3F3E4996270693501D3148D99 /* DIContainer.Reg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainer.Reg.swift; path = Sources/DITranquillity/Public/AutoResolve/DIContainer.Reg.swift; sourceTree = "<group>"; };
+		111F7711620C556A34C8674ADAC0181E /* DIScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIScope.swift; path = Sources/DITranquillity/Public/DIScope.swift; sourceTree = "<group>"; };
+		120CAD9DD78190849705D37936488631 /* DISettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DISettings.swift; path = Sources/DITranquillity/Public/DISettings.swift; sourceTree = "<group>"; };
+		1218F42D3AF1A37F581B92ACCF723EC0 /* SpecificType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpecificType.swift; path = Sources/DITranquillity/Private/SpecificType.swift; sourceTree = "<group>"; };
+		16181B4AEB18772F8E1265FD733ACD93 /* DITranquillity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DITranquillity.h; path = Sources/DITranquillity.h; sourceTree = "<group>"; };
+		1C92D668DF4CA3EA7D6F1B0C69B9E963 /* DIContainer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DIContainer+Extensions.swift"; path = "Sources/DITranquillity/Public/DIContainer+Extensions.swift"; sourceTree = "<group>"; };
+		1F103E775E145ABD8DF51D4A8CC5913D /* Lazy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lazy.swift; path = Sources/SwiftLazy/Lazy.swift; sourceTree = "<group>"; };
+		217F331DB99F67FD0DE7255BEA245980 /* UIView+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Swizzling.h"; path = "Sources/InjectIntoSubviews/iOS-tvOS/UIView+Swizzling.h"; sourceTree = "<group>"; };
+		21D66CAB06A7CB5A3717959AE4892971 /* UIView+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Swizzling.m"; path = "Sources/InjectIntoSubviews/iOS-tvOS/UIView+Swizzling.m"; sourceTree = "<group>"; };
+		22EB0BA5372A9FED91BC534A2BA1E163 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23AAF580CBBF8F68F2F48850F5052E4E /* DITranquillity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DITranquillity.modulemap; sourceTree = "<group>"; };
+		2E4F0A5698509967375CA74783075AD4 /* DITranquillity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DITranquillity.framework; path = DITranquillity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB91A40C74BF3722B63B4BB77956B04 /* DINSResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DINSResolver.h; path = Sources/InjectIntoSubviews/DINSResolver.h; sourceTree = "<group>"; };
+		32FFF49258AE54F101938682D1F9AD77 /* Pods-DITranquillityTutorial-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DITranquillityTutorial-acknowledgements.markdown"; sourceTree = "<group>"; };
+		348532E4F9FB5C56EF74F88DB0996E17 /* Pods-DITranquillityTutorial-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DITranquillityTutorial-acknowledgements.plist"; sourceTree = "<group>"; };
+		34B7BF22436EFE82EF049420BF60247E /* DIComponentBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIComponentBuilder.swift; path = Sources/DITranquillity/Public/DIComponentBuilder.swift; sourceTree = "<group>"; };
+		370253AEAD3B8AEDD0EEF24208663327 /* DIContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = Sources/DITranquillity/Public/DIContainer.swift; sourceTree = "<group>"; };
+		37C05EF82DCFBCB9CBD08D4AAA251A8A /* DIPart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIPart.swift; path = Sources/DITranquillity/Hierarchy/DIPart.swift; sourceTree = "<group>"; };
+		3C76B3078C8502C7CF1994F6BC9D3F32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CECAF658C6133706A29714D5E5903D4 /* ParsedType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParsedType.swift; path = Sources/DITranquillity/Private/ParsedType.swift; sourceTree = "<group>"; };
+		47312CD94199193C7AB0A103AD27CC5E /* DITranquillity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DITranquillity-dummy.m"; sourceTree = "<group>"; };
+		48CD2A7EFEB2ED9A32D7621FC51CDAA7 /* DIModificators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIModificators.swift; path = Sources/DITranquillity/Public/DIModificators.swift; sourceTree = "<group>"; };
+		4BCC71440C82075FE0671890DF59ECBE /* Modificators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Modificators.swift; path = Sources/DITranquillity/Private/Modificators.swift; sourceTree = "<group>"; };
+		4FD42B269EE25ACD9CE0C629FDB2D602 /* BaseLazy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseLazy.swift; path = Sources/SwiftLazy/BaseLazy.swift; sourceTree = "<group>"; };
+		584386639A5EF1408C3915D39DC1B20E /* Pods-DITranquillityTutorial-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DITranquillityTutorial-resources.sh"; sourceTree = "<group>"; };
+		5998D865E15DBDB818EE86F26146802D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59AF733D15970EB27606D2594849A812 /* Pods-DITranquillityTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DITranquillityTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		5C23E83CD760441A8380F698447A7238 /* UITableView+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Swizzling.m"; path = "Sources/InjectIntoSubviews/iOS-tvOS/UITableView+Swizzling.m"; sourceTree = "<group>"; };
+		63F968AEEB0FD5030F98DB0C047E5CDF /* DIComponentBuilder+SubviewsInject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DIComponentBuilder+SubviewsInject.swift"; path = "Sources/InjectIntoSubviews/iOS-tvOS/DIComponentBuilder+SubviewsInject.swift"; sourceTree = "<group>"; };
+		656284FEE15BABBB87E32AA7AA5D8637 /* Component.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Component.swift; path = Sources/DITranquillity/Private/Component.swift; sourceTree = "<group>"; };
+		670025C839CC9B352E5584ED047A391D /* DIStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIStoryboard.swift; path = Sources/Storyboard/DIStoryboard.swift; sourceTree = "<group>"; };
+		6966240E3D2B2E677FB86E327EF26148 /* ProtocolMagic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolMagic.swift; path = Sources/DITranquillity/Private/ProtocolMagic.swift; sourceTree = "<group>"; };
+		6BB5596A4FACBA510D47D9CCE89E7F0F /* ProviderArgs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderArgs.swift; path = Sources/SwiftLazy/ProviderArgs.swift; sourceTree = "<group>"; };
+		71C1435365E9DAEA4EE355BB2E6C65AD /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Swizzling.m"; path = "Sources/InjectIntoSubviews/iOS-tvOS/UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		7AD727C0F653166FEB88C124F209EBFB /* DITranquillity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DITranquillity-prefix.pch"; sourceTree = "<group>"; };
+		7DAA0614DAAE43E52CC1309A5B9CB0CD /* DIExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIExtensions.swift; path = Sources/DITranquillity/Public/DIExtensions.swift; sourceTree = "<group>"; };
+		7F7FAC04F3C5A664E6022C0495FA0906 /* DIStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIStorage.swift; path = Sources/DITranquillity/Public/DIStorage.swift; sourceTree = "<group>"; };
+		81F16C49CC50D53D1204769C43A620D5 /* SwiftLazy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftLazy.h; path = Sources/SwiftLazy.h; sourceTree = "<group>"; };
+		857DF6C5769EBFF467639435113C9134 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/DITranquillity/Private/Resolver.swift; sourceTree = "<group>"; };
+		87501770AF5CF86C3A63520026651168 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/DITranquillity/Private/Log.swift; sourceTree = "<group>"; };
+		87A8328988A5863F7843D7EAB438DEB6 /* Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Sources/SwiftLazy/Provider.swift; sourceTree = "<group>"; };
+		885DA78FFF7AC3ECBE583F9284BCD192 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E7481ABCF5748B59CC838668D9E973 /* Pods-DITranquillityTutorial-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DITranquillityTutorial-dummy.m"; sourceTree = "<group>"; };
+		89C2D858E6520FCF72D4E6F2C0C3F272 /* DIStoryboardBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DIStoryboardBase.h; path = "Sources/Storyboard/iOS-tvOS/DIStoryboardBase.h"; sourceTree = "<group>"; };
+		89E38215285842E53EA73BD7848641E0 /* Pods-DITranquillityTutorial-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DITranquillityTutorial-umbrella.h"; sourceTree = "<group>"; };
+		8D2C65CD44F855A9722CCC163F2066D9 /* Pods-DITranquillityTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DITranquillityTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB7CA3245482B0479AA6D662F77CB46 /* UIStoryboard+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+Swizzling.m"; path = "Sources/Storyboard/iOS-tvOS/UIStoryboard+Swizzling.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		948C062A3D31C59C967C8E3F614E22C8 /* ExtensionsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionsContainer.swift; path = Sources/DITranquillity/Private/ExtensionsContainer.swift; sourceTree = "<group>"; };
+		9955DD227FCBAEE18AA4327B54B09123 /* SwiftLazy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLazy.xcconfig; sourceTree = "<group>"; };
+		9BD57452FC825DFDFB9F96718FAB7CCD /* BaseProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseProvider.swift; path = Sources/SwiftLazy/BaseProvider.swift; sourceTree = "<group>"; };
+		A020CBA8E3479B41F4CF1326EBD44582 /* DIFramework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIFramework.swift; path = Sources/DITranquillity/Hierarchy/DIFramework.swift; sourceTree = "<group>"; };
+		A029B0AF655FA8CD85522EEE4E6D27DB /* Pods_DITranquillityTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DITranquillityTutorial.framework; path = "Pods-DITranquillityTutorial.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A568A9EE1128EF1912B3C314D4B98A61 /* TypeKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeKey.swift; path = Sources/DITranquillity/Private/TypeKey.swift; sourceTree = "<group>"; };
+		A6AC661037CB18BCB428EC8D2B635589 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Swizzling.m"; path = "Sources/Core/ObjC/NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		A972DF744622A4C1026C0CFD0C2A6D44 /* DINSResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DINSResolver.m; path = Sources/InjectIntoSubviews/DINSResolver.m; sourceTree = "<group>"; };
+		B08A402E4444AFCB1935D9A6D031FC18 /* DITranquillity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DITranquillity.xcconfig; sourceTree = "<group>"; };
+		B7522CADBAE5D8BCD2922443ABD070C1 /* Pods-DITranquillityTutorial-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DITranquillityTutorial-frameworks.sh"; sourceTree = "<group>"; };
+		B887F71A214C2A91E87D00BAB5062BA2 /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftLazy.framework; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B97E58F0F16DD8BBAD28E898CF5206 /* DITranquillity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DITranquillity-umbrella.h"; sourceTree = "<group>"; };
+		BB895DE6D8978A76A4837ED527625A0A /* SwiftLazy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLazy-dummy.m"; sourceTree = "<group>"; };
+		BDB0FC97D6F6A7988D4581DB019A6C34 /* SwiftLazy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLazy-umbrella.h"; sourceTree = "<group>"; };
+		CA1FA07C553F1FBBCC32C375C484F84F /* SwiftLazy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLazy-prefix.pch"; sourceTree = "<group>"; };
+		CFCEE551F71D1DE73D52403107B4523B /* SwiftNSResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftNSResolver.swift; path = Sources/InjectIntoSubviews/SwiftNSResolver.swift; sourceTree = "<group>"; };
+		CFD3BA888E0EFA83323A52E20FEB7B02 /* StoryboardContainerMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardContainerMap.swift; path = Sources/Storyboard/StoryboardContainerMap.swift; sourceTree = "<group>"; };
+		CFD4B27D22B24498F1C5DA6052A67F6F /* SwiftLazy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLazy.swift; path = Sources/DITranquillity/Extensions/SwiftLazy.swift; sourceTree = "<group>"; };
+		DA96A027B32758DC58F0766241188ECF /* DIComponentBuilder.Injection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIComponentBuilder.Injection.swift; path = Sources/DITranquillity/Public/AutoResolve/DIComponentBuilder.Injection.swift; sourceTree = "<group>"; };
+		DF9CC92E59F2ACD59002DD48781ECB97 /* DITypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DITypes.swift; path = Sources/DITranquillity/Public/DITypes.swift; sourceTree = "<group>"; };
+		E236370E665B1C14ECA02E305F4877A0 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Swizzling.h"; path = "Sources/Core/ObjC/NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		E2FF63E303454A09EBA33000E4DB040C /* DILifetime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DILifetime.swift; path = Sources/DITranquillity/Public/DILifetime.swift; sourceTree = "<group>"; };
+		E3825EE809EBE91EFEC6E1776245ED3F /* Multithread.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multithread.swift; path = Sources/SwiftLazy/Multithread.swift; sourceTree = "<group>"; };
+		E525838E1817B3EA2CBDDA5160C84AF0 /* UICollectionView+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+Swizzling.m"; path = "Sources/InjectIntoSubviews/iOS-tvOS/UICollectionView+Swizzling.m"; sourceTree = "<group>"; };
+		E5284E49967FBC1E62CA641FB40908A3 /* MethodMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MethodMaker.swift; path = Sources/DITranquillity/Private/MethodMaker.swift; sourceTree = "<group>"; };
+		E7D0585474849BA7EA07C5B893B25E95 /* DIStoryboardBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DIStoryboardBase.m; path = "Sources/Storyboard/iOS-tvOS/DIStoryboardBase.m"; sourceTree = "<group>"; };
+		EB7392ADB3558D8A382C46B18B9C07C5 /* Synchronize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Synchronize.swift; path = Sources/DITranquillity/Private/Synchronize.swift; sourceTree = "<group>"; };
+		F14FC34F06CBD934893DF250014DBEB4 /* Pods-DITranquillityTutorial.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DITranquillityTutorial.modulemap"; sourceTree = "<group>"; };
+		F6350427FD56125C9AF48DEF0DEB9E34 /* StoryboardResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResolver.swift; path = Sources/Storyboard/StoryboardResolver.swift; sourceTree = "<group>"; };
+		FC36416D122904F1A22CA0245B5DA7D3 /* ViewController+Children.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+Children.swift"; path = "Sources/Storyboard/ViewController+Children.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB9A027043A1C21342C59863E4CE3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6021AAE4DA5FEFD12E5D6417F3A8DB7F /* Foundation.framework in Frameworks */,
+				1A045B46FEDA25D98249327DD0676378 /* SwiftLazy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924723C05E22A55A053870345F749F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3B073640555D5A45BE5DD276A26CBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931FF74B44F1075616D4122452D68EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71DC7B53AC26E5089F4B1828912FCC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136470755E2E392537E3878F8882138C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C270F28EBF737BC39FED42B9CAB00549 /* DITranquillity */,
+				FD6E3884C29C6B15108DCF22881547F4 /* SwiftLazy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1A7CBF68FE93163CDF5402A23D2F561E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23AAF580CBBF8F68F2F48850F5052E4E /* DITranquillity.modulemap */,
+				B08A402E4444AFCB1935D9A6D031FC18 /* DITranquillity.xcconfig */,
+				47312CD94199193C7AB0A103AD27CC5E /* DITranquillity-dummy.m */,
+				7AD727C0F653166FEB88C124F209EBFB /* DITranquillity-prefix.pch */,
+				B8B97E58F0F16DD8BBAD28E898CF5206 /* DITranquillity-umbrella.h */,
+				22EB0BA5372A9FED91BC534A2BA1E163 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DITranquillity";
+			sourceTree = "<group>";
+		};
+		3CE891F7FD98AD0E731835DE563AD512 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F0A5698509967375CA74783075AD4 /* DITranquillity.framework */,
+				A029B0AF655FA8CD85522EEE4E6D27DB /* Pods_DITranquillityTutorial.framework */,
+				B887F71A214C2A91E87D00BAB5062BA2 /* SwiftLazy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA84E9285BDB6B6A7B0AC513F2D1901 /* Pods-DITranquillityTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				885DA78FFF7AC3ECBE583F9284BCD192 /* Info.plist */,
+				F14FC34F06CBD934893DF250014DBEB4 /* Pods-DITranquillityTutorial.modulemap */,
+				32FFF49258AE54F101938682D1F9AD77 /* Pods-DITranquillityTutorial-acknowledgements.markdown */,
+				348532E4F9FB5C56EF74F88DB0996E17 /* Pods-DITranquillityTutorial-acknowledgements.plist */,
+				88E7481ABCF5748B59CC838668D9E973 /* Pods-DITranquillityTutorial-dummy.m */,
+				B7522CADBAE5D8BCD2922443ABD070C1 /* Pods-DITranquillityTutorial-frameworks.sh */,
+				584386639A5EF1408C3915D39DC1B20E /* Pods-DITranquillityTutorial-resources.sh */,
+				89E38215285842E53EA73BD7848641E0 /* Pods-DITranquillityTutorial-umbrella.h */,
+				8D2C65CD44F855A9722CCC163F2066D9 /* Pods-DITranquillityTutorial.debug.xcconfig */,
+				59AF733D15970EB27606D2594849A812 /* Pods-DITranquillityTutorial.release.xcconfig */,
+			);
+			name = "Pods-DITranquillityTutorial";
+			path = "Target Support Files/Pods-DITranquillityTutorial";
+			sourceTree = "<group>";
+		};
+		6795024EEF3CE2DBE45A63555ABC195C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C76B3078C8502C7CF1994F6BC9D3F32 /* Info.plist */,
+				069BE2F3369B771282F1FC772BF915C7 /* SwiftLazy.modulemap */,
+				9955DD227FCBAEE18AA4327B54B09123 /* SwiftLazy.xcconfig */,
+				BB895DE6D8978A76A4837ED527625A0A /* SwiftLazy-dummy.m */,
+				CA1FA07C553F1FBBCC32C375C484F84F /* SwiftLazy-prefix.pch */,
+				BDB0FC97D6F6A7988D4581DB019A6C34 /* SwiftLazy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLazy";
+			sourceTree = "<group>";
+		};
+		722981D6BD477916D60529D599443622 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA84E9285BDB6B6A7B0AC513F2D1901 /* Pods-DITranquillityTutorial */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CD765B27F5B3E65A99C3532D5122CEC0 /* Frameworks */,
+				136470755E2E392537E3878F8882138C /* Pods */,
+				3CE891F7FD98AD0E731835DE563AD512 /* Products */,
+				722981D6BD477916D60529D599443622 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C270F28EBF737BC39FED42B9CAB00549 /* DITranquillity */ = {
+			isa = PBXGroup;
+			children = (
+				09B9AA9090B38F864A1AFFC4C47EEA15 /* BundleContainer.swift */,
+				656284FEE15BABBB87E32AA7AA5D8637 /* Component.swift */,
+				34B7BF22436EFE82EF049420BF60247E /* DIComponentBuilder.swift */,
+				63F968AEEB0FD5030F98DB0C047E5CDF /* DIComponentBuilder+SubviewsInject.swift */,
+				DA96A027B32758DC58F0766241188ECF /* DIComponentBuilder.Injection.swift */,
+				370253AEAD3B8AEDD0EEF24208663327 /* DIContainer.swift */,
+				1C92D668DF4CA3EA7D6F1B0C69B9E963 /* DIContainer+Extensions.swift */,
+				10AD6FB3F3E4996270693501D3148D99 /* DIContainer.Reg.swift */,
+				7DAA0614DAAE43E52CC1309A5B9CB0CD /* DIExtensions.swift */,
+				A020CBA8E3479B41F4CF1326EBD44582 /* DIFramework.swift */,
+				E2FF63E303454A09EBA33000E4DB040C /* DILifetime.swift */,
+				48CD2A7EFEB2ED9A32D7621FC51CDAA7 /* DIModificators.swift */,
+				2FB91A40C74BF3722B63B4BB77956B04 /* DINSResolver.h */,
+				A972DF744622A4C1026C0CFD0C2A6D44 /* DINSResolver.m */,
+				37C05EF82DCFBCB9CBD08D4AAA251A8A /* DIPart.swift */,
+				111F7711620C556A34C8674ADAC0181E /* DIScope.swift */,
+				120CAD9DD78190849705D37936488631 /* DISettings.swift */,
+				7F7FAC04F3C5A664E6022C0495FA0906 /* DIStorage.swift */,
+				670025C839CC9B352E5584ED047A391D /* DIStoryboard.swift */,
+				89C2D858E6520FCF72D4E6F2C0C3F272 /* DIStoryboardBase.h */,
+				E7D0585474849BA7EA07C5B893B25E95 /* DIStoryboardBase.m */,
+				16181B4AEB18772F8E1265FD733ACD93 /* DITranquillity.h */,
+				DF9CC92E59F2ACD59002DD48781ECB97 /* DITypes.swift */,
+				948C062A3D31C59C967C8E3F614E22C8 /* ExtensionsContainer.swift */,
+				87501770AF5CF86C3A63520026651168 /* Log.swift */,
+				E5284E49967FBC1E62CA641FB40908A3 /* MethodMaker.swift */,
+				00725787061334B5D19660F3C4B39041 /* MethodSignature.swift */,
+				4BCC71440C82075FE0671890DF59ECBE /* Modificators.swift */,
+				E236370E665B1C14ECA02E305F4877A0 /* NSObject+Swizzling.h */,
+				A6AC661037CB18BCB428EC8D2B635589 /* NSObject+Swizzling.m */,
+				3CECAF658C6133706A29714D5E5903D4 /* ParsedType.swift */,
+				6966240E3D2B2E677FB86E327EF26148 /* ProtocolMagic.swift */,
+				857DF6C5769EBFF467639435113C9134 /* Resolver.swift */,
+				1218F42D3AF1A37F581B92ACCF723EC0 /* SpecificType.swift */,
+				CFD3BA888E0EFA83323A52E20FEB7B02 /* StoryboardContainerMap.swift */,
+				F6350427FD56125C9AF48DEF0DEB9E34 /* StoryboardResolver.swift */,
+				CFD4B27D22B24498F1C5DA6052A67F6F /* SwiftLazy.swift */,
+				CFCEE551F71D1DE73D52403107B4523B /* SwiftNSResolver.swift */,
+				EB7392ADB3558D8A382C46B18B9C07C5 /* Synchronize.swift */,
+				A568A9EE1128EF1912B3C314D4B98A61 /* TypeKey.swift */,
+				E525838E1817B3EA2CBDDA5160C84AF0 /* UICollectionView+Swizzling.m */,
+				8EB7CA3245482B0479AA6D662F77CB46 /* UIStoryboard+Swizzling.m */,
+				5C23E83CD760441A8380F698447A7238 /* UITableView+Swizzling.m */,
+				217F331DB99F67FD0DE7255BEA245980 /* UIView+Swizzling.h */,
+				21D66CAB06A7CB5A3717959AE4892971 /* UIView+Swizzling.m */,
+				71C1435365E9DAEA4EE355BB2E6C65AD /* UIViewController+Swizzling.m */,
+				FC36416D122904F1A22CA0245B5DA7D3 /* ViewController+Children.swift */,
+				1A7CBF68FE93163CDF5402A23D2F561E /* Support Files */,
+			);
+			name = DITranquillity;
+			path = DITranquillity;
+			sourceTree = "<group>";
+		};
+		C460747BA28C356378DBC2642019F51C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5998D865E15DBDB818EE86F26146802D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CD765B27F5B3E65A99C3532D5122CEC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08CF3E0A720D402045936C1A33D334A0 /* SwiftLazy.framework */,
+				C460747BA28C356378DBC2642019F51C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6E3884C29C6B15108DCF22881547F4 /* SwiftLazy */ = {
+			isa = PBXGroup;
+			children = (
+				4FD42B269EE25ACD9CE0C629FDB2D602 /* BaseLazy.swift */,
+				9BD57452FC825DFDFB9F96718FAB7CCD /* BaseProvider.swift */,
+				1F103E775E145ABD8DF51D4A8CC5913D /* Lazy.swift */,
+				E3825EE809EBE91EFEC6E1776245ED3F /* Multithread.swift */,
+				87A8328988A5863F7843D7EAB438DEB6 /* Provider.swift */,
+				6BB5596A4FACBA510D47D9CCE89E7F0F /* ProviderArgs.swift */,
+				81F16C49CC50D53D1204769C43A620D5 /* SwiftLazy.h */,
+				6795024EEF3CE2DBE45A63555ABC195C /* Support Files */,
+			);
+			name = SwiftLazy;
+			path = SwiftLazy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		462FDA818C699D49EACD12BDF3AD1688 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6820CEA6CA193F1FD02264372E781399 /* Pods-DITranquillityTutorial-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B392E005FDE9A871D2AC76DCC2649A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5FDA2C78AB02AF684EB732E305F6CD /* DINSResolver.h in Headers */,
+				639770F0E132F1B25D1377331767AF06 /* DIStoryboardBase.h in Headers */,
+				09E6BBC5873737C0AD5E73FDACBDAF47 /* DITranquillity-umbrella.h in Headers */,
+				B72E5DD433ED9817449EEEF210083C39 /* DITranquillity.h in Headers */,
+				C61DACE72105183A10E857CAC6E24870 /* NSObject+Swizzling.h in Headers */,
+				3D4EE521C9F13468E8ED6EFE39674954 /* UIView+Swizzling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6708C9739881E239FFA26B60901D6BF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1888428A61BD56C06000C8946830AC3 /* SwiftLazy-umbrella.h in Headers */,
+				42EC083439A5F899F27780D43451A6C6 /* SwiftLazy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		56F730CF46791371B19C2E8CE58ACEDF /* DITranquillity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB6390F7D69D130FD00CF288567C0B7 /* Build configuration list for PBXNativeTarget "DITranquillity" */;
+			buildPhases = (
+				7376BA1592A8024C6BD81FF8A4C3DF67 /* Sources */,
+				8FB9A027043A1C21342C59863E4CE3E3 /* Frameworks */,
+				4B392E005FDE9A871D2AC76DCC2649A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				962305B3D4C20372E762BE8B3B2EDD61 /* PBXTargetDependency */,
+			);
+			name = DITranquillity;
+			productName = DITranquillity;
+			productReference = 2E4F0A5698509967375CA74783075AD4 /* DITranquillity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8AD2A8481587020F08B21547536E344 /* SwiftLazy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26F0A728962AA789486021EB9A870A4 /* Build configuration list for PBXNativeTarget "SwiftLazy" */;
+			buildPhases = (
+				703DA80086684926BB9E11C56071EBFD /* Sources */,
+				924723C05E22A55A053870345F749F95 /* Frameworks */,
+				6708C9739881E239FFA26B60901D6BF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftLazy;
+			productName = SwiftLazy;
+			productReference = B887F71A214C2A91E87D00BAB5062BA2 /* SwiftLazy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9109929FC986EDED6DA10494C128181 /* Pods-DITranquillityTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1C20439AF27EFB92E4D23DFD16BFBA7 /* Build configuration list for PBXNativeTarget "Pods-DITranquillityTutorial" */;
+			buildPhases = (
+				BE1705B79DBB3905968CA75BC6016A06 /* Sources */,
+				931FF74B44F1075616D4122452D68EE9 /* Frameworks */,
+				462FDA818C699D49EACD12BDF3AD1688 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3B111FA39C6C82C00F3A7CC566C9FD /* PBXTargetDependency */,
+				54F7B0A13A7A92B11944259FB22D8FF6 /* PBXTargetDependency */,
+			);
+			name = "Pods-DITranquillityTutorial";
+			productName = "Pods-DITranquillityTutorial";
+			productReference = A029B0AF655FA8CD85522EEE4E6D27DB /* Pods_DITranquillityTutorial.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3CE891F7FD98AD0E731835DE563AD512 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56F730CF46791371B19C2E8CE58ACEDF /* DITranquillity */,
+				A9109929FC986EDED6DA10494C128181 /* Pods-DITranquillityTutorial */,
+				A8AD2A8481587020F08B21547536E344 /* SwiftLazy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		703DA80086684926BB9E11C56071EBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DF311C23301D47C26AB8CEAC5DD13A /* BaseLazy.swift in Sources */,
+				688A0AC0D093347B4BB9E3EF1B296CB1 /* BaseProvider.swift in Sources */,
+				4FB5D4942BB574F004D5896422D4F96C /* Lazy.swift in Sources */,
+				71D629E613E01DF18910A2FFAB0B8F21 /* Multithread.swift in Sources */,
+				B5F50D179DF61F6F573586E3CBD004BB /* Provider.swift in Sources */,
+				D006F8F023CDFA4202611DEADA757852 /* ProviderArgs.swift in Sources */,
+				4FC3FEB19D1021C0AB64B157D41F7FD4 /* SwiftLazy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7376BA1592A8024C6BD81FF8A4C3DF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D169480997EC74E5A2E0EEDB283653E6 /* BundleContainer.swift in Sources */,
+				3EAAF8A6992FB965FF399EC016AF0CC3 /* Component.swift in Sources */,
+				F6F625B2B1CD5A9B4BE71BEABC2C8B0E /* DIComponentBuilder+SubviewsInject.swift in Sources */,
+				C1A8FAF30229B85FA449079AEAA52C5D /* DIComponentBuilder.Injection.swift in Sources */,
+				5A1C428D6EAFCAD88753FC7CB8EC8091 /* DIComponentBuilder.swift in Sources */,
+				CE361F0565B30AAD2C16B92CBC2A3721 /* DIContainer+Extensions.swift in Sources */,
+				4DC767F8F02272C70608B0C35B6DD169 /* DIContainer.Reg.swift in Sources */,
+				83CDBDD4ABB182484DEC4D1C0573004C /* DIContainer.swift in Sources */,
+				A5AB18A472D60F9C3FE16874102DC5D1 /* DIExtensions.swift in Sources */,
+				D51537F2CC291D548C3C42434D8F6689 /* DIFramework.swift in Sources */,
+				8A2632F2359B2B10EF3B93CBA7BEA786 /* DILifetime.swift in Sources */,
+				7F5B1016648A730A53E07D2CBBB84874 /* DIModificators.swift in Sources */,
+				D47AE3F8F602871A9BE2127FD26A4B93 /* DINSResolver.m in Sources */,
+				61EFF613532752998BAA79CC1F47573C /* DIPart.swift in Sources */,
+				E13B019495AC58A26143F6D1E2B4815D /* DIScope.swift in Sources */,
+				EA599DB84F17FEEAF99C915C38A6280B /* DISettings.swift in Sources */,
+				3165894470BB02EEF5086BD0BFA213B9 /* DIStorage.swift in Sources */,
+				6A5FC58CB332A67362D6183BA2C45BCC /* DIStoryboard.swift in Sources */,
+				C767DB18350CC391CF00C3437A79440C /* DIStoryboardBase.m in Sources */,
+				B13304FD613E2992178CAF218D2D7E46 /* DITranquillity-dummy.m in Sources */,
+				E04472603FFF5792C25A4BC06E041BDA /* DITypes.swift in Sources */,
+				14D720D9ACDF797AB5260688F7708BB1 /* ExtensionsContainer.swift in Sources */,
+				EB3B48ABF3C8D7BE5A23FB42D1EFD231 /* Log.swift in Sources */,
+				7D6D9905461C184ED4B4EA99CC13F233 /* MethodMaker.swift in Sources */,
+				D7E017DA798CB427DD8D46700E322412 /* MethodSignature.swift in Sources */,
+				7796B154208D0CA9DB682BBD916EF118 /* Modificators.swift in Sources */,
+				969263BCBC622492E9224618BC152A2C /* NSObject+Swizzling.m in Sources */,
+				D07F0F18F8A9E48E523E1EA1997EEB59 /* ParsedType.swift in Sources */,
+				BCC311B8D32B07743298D1668D99B095 /* ProtocolMagic.swift in Sources */,
+				058A4E98DAF074D8E6326DBB63B40E7A /* Resolver.swift in Sources */,
+				B4E50EDB1D13D49B19E5EFA89BBBFF5A /* SpecificType.swift in Sources */,
+				746EEEF88A62845385DA1704E03B8719 /* StoryboardContainerMap.swift in Sources */,
+				C039BB76FF2F7F0A9E8F9495F7CD42C4 /* StoryboardResolver.swift in Sources */,
+				76B200B785768DF78DB94C8ACB1F91EC /* SwiftLazy.swift in Sources */,
+				4E2F2E346F0370F734F3E601D5DB01F6 /* SwiftNSResolver.swift in Sources */,
+				8D59F4AEE236B3B584BCC0ED78FC0846 /* Synchronize.swift in Sources */,
+				0D00A9B2CDF6C0FD57AEF5057C8FAEDC /* TypeKey.swift in Sources */,
+				7D018FB1FE3B8F5AEEF762776BD06DCD /* UICollectionView+Swizzling.m in Sources */,
+				97BDB6CD5BE87B30D67B9A79165EADD8 /* UIStoryboard+Swizzling.m in Sources */,
+				B73CC9E9A2A5E110B51D3A23D417A4B7 /* UITableView+Swizzling.m in Sources */,
+				A5EC59E8F3FB315A94DC426921D57BC3 /* UIView+Swizzling.m in Sources */,
+				ABF9D34191A10050C6088C90D2E63BC9 /* UIViewController+Swizzling.m in Sources */,
+				42ED169BD307D89532E5E598843C16BE /* ViewController+Children.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1705B79DBB3905968CA75BC6016A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC997C7EE2A79478E45152F8FBE1EEC4 /* Pods-DITranquillityTutorial-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54F7B0A13A7A92B11944259FB22D8FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLazy;
+			target = A8AD2A8481587020F08B21547536E344 /* SwiftLazy */;
+			targetProxy = F0E5D70144F30933F30A2E1FF0ED3B6B /* PBXContainerItemProxy */;
+		};
+		962305B3D4C20372E762BE8B3B2EDD61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLazy;
+			target = A8AD2A8481587020F08B21547536E344 /* SwiftLazy */;
+			targetProxy = BBFE61D4774289A45C461963C33BEA1F /* PBXContainerItemProxy */;
+		};
+		AF3B111FA39C6C82C00F3A7CC566C9FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DITranquillity;
+			target = 56F730CF46791371B19C2E8CE58ACEDF /* DITranquillity */;
+			targetProxy = 78E982A62C630EE14E55C0EE9030E261 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09D1E3541B9BB0CD7734037F0E716403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2C65CD44F855A9722CCC163F2066D9 /* Pods-DITranquillityTutorial.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DITranquillityTutorial/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DITranquillityTutorial/Pods-DITranquillityTutorial.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		431094B9248C36DDA43B8B84A068EB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08A402E4444AFCB1935D9A6D031FC18 /* DITranquillity.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DITranquillity/DITranquillity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DITranquillity/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DITranquillity/DITranquillity.modulemap";
+				PRODUCT_MODULE_NAME = DITranquillity;
+				PRODUCT_NAME = DITranquillity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6661F415D68C42F8D381B404852F74C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9955DD227FCBAEE18AA4327B54B09123 /* SwiftLazy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLazy/SwiftLazy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLazy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLazy/SwiftLazy.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7131DEA957AE6CCDA46538C6A27D3811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9955DD227FCBAEE18AA4327B54B09123 /* SwiftLazy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLazy/SwiftLazy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLazy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLazy/SwiftLazy.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B576F5EEAC913F60CC21D4542F1C493A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59AF733D15970EB27606D2594849A812 /* Pods-DITranquillityTutorial.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DITranquillityTutorial/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DITranquillityTutorial/Pods-DITranquillityTutorial.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D38B77756ABB8FB0B324AEA8A3A8033E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08A402E4444AFCB1935D9A6D031FC18 /* DITranquillity.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DITranquillity/DITranquillity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DITranquillity/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DITranquillity/DITranquillity.modulemap";
+				PRODUCT_MODULE_NAME = DITranquillity;
+				PRODUCT_NAME = DITranquillity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB6390F7D69D130FD00CF288567C0B7 /* Build configuration list for PBXNativeTarget "DITranquillity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38B77756ABB8FB0B324AEA8A3A8033E /* Debug */,
+				431094B9248C36DDA43B8B84A068EB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26F0A728962AA789486021EB9A870A4 /* Build configuration list for PBXNativeTarget "SwiftLazy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6661F415D68C42F8D381B404852F74C9 /* Debug */,
+				7131DEA957AE6CCDA46538C6A27D3811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1C20439AF27EFB92E4D23DFD16BFBA7 /* Build configuration list for PBXNativeTarget "Pods-DITranquillityTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D1E3541B9BB0CD7734037F0E716403 /* Debug */,
+				B576F5EEAC913F60CC21D4542F1C493A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

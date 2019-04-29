@@ -1,0 +1,6 @@
+framework module Pods_DITranquillityTutorial {
+  umbrella header "Pods-DITranquillityTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
